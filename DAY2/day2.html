@@ -1,16 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>day2</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="b2.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 20px;
+            position: relative;
+            left: 20px;
+            top: 10px;
+        }
+
+        .Live {
+            font-size: small;
+        }
+
+        header {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            border-bottom: 1px solid rgb(226, 226, 226);
+            padding: 0px 20px;
+        }
+        .menu {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           display: flex; 
+        }
+        .menu-item{
+           position: relative;
+           left: 45vh;
+           margin-top: 10px;
+           margin-left:  20px;
+        }
+        .menu-item a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 15px 20px; 
+        }
+        .menu-item  a:hover{
+            background-color: #e4e3e3;
+            
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            list-style-type: none;
+            border: solid rgb(226, 226, 226);
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgb(231, 231, 231);
+            width: 200px;
+            margin: 0;
+            padding: 0;
+
+        }
+        .dropdown, .submenu {
+            display: none;
+            position: absolute;
+            list-style-type: none;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgb(224, 224, 224);
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            left: 20px;
+            
+        }
+        .menu-item:hover .dropdown {
+            display: block;
+        }
+        .dropdown li a, .submenu li a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .dropdown li a:hover,
+        .submenu li a:hover {
+            background-color: #f4f4f4;
+        }
+        .dropdown li:hover .submenu {
+            display: block;
+        }
+        .submenu{
+            position: absolute;
+            left: 200px;
+            bottom: 38px;
+            margin: 0;
+            padding: 0;
+           
+        }
+        .menu-item1{
+            font-size: 14px;
+            position: relative;
+            left: 75vh;
+            top: 13px;
+            font-weight: normal;
+            font-family: sans-serif;
+            background-color: orange;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            
+        }  
+        .menu-item1 a{
+            
+            display: block;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+             
+        }
+        .menu-item1:hover{
+            background-color: rgb(195, 128, 5);
+        }
+        
+    </style>
 </head>
+
 <body>
-    
-<img src="" alt="">
+    <header>
+        <h1>Travel°<span class="Live">Live</span></h1>
+        <nav>
+            <ul class="menu">
+
+                <li class="menu-item"><a href="#">HOME</a></li>
+                <li class="menu-item"><a href="#">TOUR</a></li>
+                <li class="menu-item"><a href="#">DESTINATION</a>
+                    <ul class="dropdown">
+                        <li ><a href="#">Europe</a>
+                            <ul class="submenu">
+
+                                <li><a href="#">Albania Tours</a></li>
+                                <li><a href="#">Andorra Tours</a></li>
+                                <li><a href="#">Armenia Tours</a></li>
+            
+                            </ul>
+                        </li>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">North America</a></li>
+                        <li><a href="#">South America</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">BLOG</a></li>
+                <li class="menu-item"> <a href="#">PAGE</a></li>
+                <li class="menu-item"><a href="#">CONTACT</a></li>
+                <li class="menu-item1"><a href="">LOGIN</a></li>
+             
+            </ul>
+           
+        </nav>
+      
+    </header>
 
 </body>
-<style>
 
-</style>
 </html>

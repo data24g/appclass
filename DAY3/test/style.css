@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: aqua;
+    position: fixed;
+    width: 100%;
+    padding: auto;
+}
+.main{
+    display: flex;
+    float: right;
+    position: relative ;
+    right: 50px;
+}
+.main li {
+    margin-left: 50px ;
+    list-style-type: none;
+    
+}
+main li a {
+    text-decoration: none;
+}
